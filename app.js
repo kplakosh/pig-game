@@ -11,7 +11,7 @@ var scores, roundScore, activePlayer;
 
 scores = [0, 0];
 roundScore = 0;
-activePlayer = 1;
+activePlayer = 0;
 
 // document.querySelector('#current-' + activePlayer).textContent = dice;
 // document.querySelector('#current-' + activePlayer).textHTML = '<em>' + dice + '</em>';
@@ -32,7 +32,12 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     diceDOM.style.display = 'block';
     diceDOM.src = 'dice-' + dice + '.png';    
 
-
     // 3. Update the round score IF the rolled number was NOT a 1
-
+    if (dice !== 1) {
+        // Add score
+        roundScore += dice;
+        document.querySelector('#current-' + activePlayer).textContent = roundScore;
+    } else {
+        //Next player
+    }
 });
