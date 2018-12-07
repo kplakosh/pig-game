@@ -2,7 +2,7 @@
 
 1. A player looses his entire score when he rolls two 6 in the row. After that,
 it's next player's turn.
-2. Add an input field to the HTML where playes can set the winning score, 
+2. Add an input field to the HTML where players can set the winning score, 
 so that they can change the predefined score of 100.
 3. Add another dice to the game, so that there are two dices now. 
 The player looses his score when one of them is a 1.
@@ -64,6 +64,8 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     }
 });
 
+var winningScoreValue = document.querySelector('.setScore');
+
 
 document.querySelector('.btn-hold').addEventListener('click', function () {
     if (gamePlaying) {
@@ -74,7 +76,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         // Check is player won the game
-        if (scores[activePlayer] >= 100) {
+        if (scores[activePlayer] >= winningScoreValue.value) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             hideDices(dices);;
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
