@@ -154,16 +154,17 @@ i {
 .setScore {
     display: block;
     position: absolute;
-    top: 350px;
+    top: 520px;
     left: calc(50% - 100px);
     width: 200px;
     height: 36px;
-    border-radius: 3px;
     outline: none;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-transform: uppercase;
     cursor: text;
-    border: none;
+    color: #555;
     background-color: #fff;
 }
 
