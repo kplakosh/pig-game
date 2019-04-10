@@ -23,7 +23,9 @@ For example, the first player, Anne, begins a turn with a roll of 3 and 5. Anne 
 
 Screenshot of the game played:
 
-![](./images/Pig-game.gif)
+<p align="center">
+    <img src="./img/Pig-game.gif">
+</p>
 
 
 ## Installation 
