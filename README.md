@@ -30,10 +30,6 @@ Screenshot of the game played:
 
 ## Installation 
 
-Step 1. Download/clone <a href="https://github.com/kplakosh/pig-game.git"> project file:
-
-```
-https://github.com/kplakosh/pig-game.git
-```
+Step 1. Download/clone <a href="https://github.com/kplakosh/pig-game.git"> project file</a>
 
 Step 2. Open newIndex.html file in the browser and enjoy the game!
