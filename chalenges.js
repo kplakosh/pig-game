@@ -37,7 +37,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
             function (element, index) {
                 element.style.display = 'block';
                 dicesValue[index] = Math.floor(Math.random() * 6) + 1;
-                element.src = 'dice-' + dicesValue[index] + '.png';
+                element.src = './img/dice-' + dicesValue[index] + '.png';
             }
         );
 
